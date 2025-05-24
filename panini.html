@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panini - Deux Frères</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Anton', sans-serif;
+      background: url('deux_freres.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: -1;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      border-radius: 10px;
+    }
+
+    .hero {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px #000;
+      font-family: 'Martel', serif;
+    }
+
+    .section-title {
+      text-align: center;
+      margin: 40px 0 20px;
+      font-size: 2.5rem;
+      font-family: 'Martel', serif;
+    }
+
+    .card {
+      transition: transform 0.3s ease;
+      background-color: rgba(255, 255, 255, 0.9);
+      color: black;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      object-fit: contain;
+      height: 200px;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: white;
+      border-top-left-radius: 12px;
+      border-top-right-radius: 12px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text:last-child {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #dc3545;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+   <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <ideux_freres.jpg" alt="Deux Frères">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <header class="hero">
+    Nos Paninis
+  </header>
+
+  <!-- SECTION PRODUITS -->
+  <main class="container">
+    <div class="row gy-4">
+
+      <!-- Carte Panini 1 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="panini-4-fromages.png" alt="Panini 4 fromages">
+          <div class="card-body text-center">
+            <h3 class="card-title">Menu Panini 4 Fromages</h3>
+            <p class="card-text">4 fromages, frites, boisson</p>
+            <p class="card-text">8€</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte Panini 2 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="panini thon.jpg" alt="Panini Thon">
+          <div class="card-body text-center">
+            <h3 class="card-title">Menu Panini Thon</h3>
+            <p class="card-text">Thon, frites, boisson</p>
+            <p class="card-text">8€</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carte Panini 3 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="panini jambon.jpg" alt="Panini Jambon">
+          <div class="card-body text-center">
+            <h3 class="card-title">Menu Panini Jambon</h3>
+            <p class="card-text">Jambon, frites, boisson</p>
+            <p class="card-text">8€</p>   
+       </div>
+        </div>
+      </div>
+
+      <!-- Carte Panini 4 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="panini-saumon.jpg" alt="Panini Saumon">
+          <div class="card-body text-center">
+            <h3 class="card-title">Menu Panini Saumon</h3>
+            <p class="card-text">Saumon, frites, boisson</p>
+            <p class="card-text">8€</p>   
+               </div>
+        </div>
+      </div>
+
+      <!-- Carte Panini 5 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="panini kebab.jpg" alt="Panini Kebab">
+          <div class="card-body text-center">
+            <h3 class="card-title">Menu Panini Kebab</h3>
+            <p class="card-text">Kebab, frites, boisson</p>
+            <p class="card-text">8€</p>          
+            </div>
+        </div>
+      </div>
+
+      <!-- Carte Panini 6 -->
+      <div class="col-md-4">
+        <div class="card h-100">
+          <img src="panini escalope.png" alt="Panini Escalope">
+          <div class="card-body text-center">
+            <h3 class="card-title">Menu Panini Escalope</h3>
+            <p class="card-text">Escalope, frites, boisson</p>
+           <p class="card-text">8€</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

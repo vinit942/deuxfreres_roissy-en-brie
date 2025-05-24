@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu Pizzas - Deux Frères</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Custom Styles -->
+    <style>
+    body {
+      background-color: #000;
+      background: url('deux_freres.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+font-family: 'Anton', sans-serif; 
+   }
+    .navbar-brand img {
+      height: 55px;
+    }
+    h2.section-title {
+font-family: 'Anton', sans-serif;      text-align: center;
+      margin: 40px 0 20px;
+      background-color: rgba(0,0,0,0.7);
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .section-title.tomate {
+      color: #dc3545; /* rouge */
+    }
+    .section-title.creme {
+      color: #fff; /* blanc */
+    }
+    .item-card {
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      color: #000;
+      transition: transform 0.3s;
+    }
+    .item-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+    }
+    .item-card img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+    }
+    .item-infos {
+      padding: 15px;
+    }
+    .item-infos h3 {
+      font-family: 'Anton', cursive;
+      font-size: 1.5rem;
+    }
+    .prix {
+      font-weight: bold;
+      color: #dc3545;
+    }
+    .pizza-block {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+  </style>
+</head>
+</head>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="deux_freres.jpg" alt="Deux Frères">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<body>
+  <section class="container py-5 pizza-block">
+    <h2 class="section-title">Nos Pizzas - Base Sauce Tomate</h2>
+    <div class="row g-4">
+      <!-- Pizzas Sauce Tomate -->
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-marguarita.jpg" alt="Marguarita">
+          <div class="item-infos">
+            <h3>Marguarita</h3>
+            <hr>
+            <p>Mozarella, Base Sauce Tomate</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-calzone.jpg" alt="Calzone">
+          <div class="item-infos">
+            <h3>Calzone</h3>
+            <hr>
+            <p>Jambon ou Viande Hachée, Oeuf, Base Sauce Tomate</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-vegetarienne.png" alt="Vegetarienne">
+          <div class="item-infos">
+            <h3>Vegetarienne</h3>
+            <hr>
+            <p>Champignon, Poivron, Olives, Artichaut, Base Sauce Tomate</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-orientale.png" alt="Orientale">
+          <div class="item-infos">
+            <h3>Orientale</h3>
+            <hr>
+            <p>Merguez, Poivron, Olives, Oeuf, Oignons, Base Sauce Tomate</p>
+            <p class="prix">6€ Petite, 8€ Moyenne, 12€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-mexicaine.png" alt="Mexicaine">
+          <div class="item-infos">
+            <h3>Mexicaine</h3>
+            <hr>
+            <p>Merguez, Viande Hachée, Oeuf, Base Sauce Tomate</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-buffalo.jpg" alt="Buffalo">
+          <div class="item-infos">
+            <h3>Buffalo</h3>
+            <hr>
+            <p>Chorizo, Viande Hachée, Pomme de Terre, Base Sauce Tomate</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-torino.png" alt="Torino">
+          <div class="item-infos">
+            <h3>Torino</h3>
+            <hr>
+            <p>Thon, Oignon, Oeuf, Base Sauce Tomate</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-kebab.png" alt="Kebab">
+          <div class="item-infos">
+            <h3>Kebab</h3>
+            <hr>
+            <p>Kebab, Poivron, Base Sauce Tomate</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-3jambon.jpg" alt="3 Jambon">
+          <div class="item-infos">
+            <h3>3 Jambon</h3>
+            <hr>
+            <p>Lardon, Chorizo, Jambon, Base Sauce Tomate</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-savoyarde (1).jpg" alt="Savoyard">
+          <div class="item-infos">
+            <h3>Savoyarde</h3>
+            <hr>
+            <p>Lardon, Pomme de Terre, Oignon, Reblochon, Base Sauce Tomate</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ <!-- Base Crème Fraîche -->
+  <section class="container py-5 pizza-block">
+    <h2 class="section-title">Nos Pizzas - Base Crème Fraîche</h2>
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizzadeuxfreres.jpg" alt="Deux Frères">
+          <div class="item-infos">
+            <h3>Deux Frères</h3>
+            <hr>
+            <p>Poulet, Merguez, Viande Hachée, Base Crème Fraîche</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="indienne.jpg" alt="Indienne">
+          <div class="item-infos">
+            <h3>Indienne</h3>
+            <hr>
+            <p>Poulet Curry, Oignons, Base Crème Fraîche</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizzaboursin.png" alt="Boursin">
+          <div class="item-infos">
+            <h3>Boursin</h3>
+            <hr>
+            <p>Viande Hachée, Pomme de Terre, Base Crème Fraîche</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-raclette.png" alt="Raclette">
+          <div class="item-infos">
+            <h3>Raclette</h3>
+            <hr>
+            <p>Jambon, Raclette, Base Crème Fraîche</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-chevremiel.jpg" alt="Chèvre Miel">
+          <div class="item-infos">
+            <h3>Chèvre Miel</h3>
+            <hr>
+            <p>Chèvre, Miel, Poulet, Base Crème Fraîche</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-norvergienne.jpg" alt="Norvégienne">
+          <div class="item-infos">
+            <h3>Norvégienne</h3>
+            <hr>
+            <p>Saumon, Pomme de Terre, Base Crème Fraîche</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-campione (1).png" alt="Campione">
+          <div class="item-infos">
+            <h3>Campione</h3>
+            <hr>
+            <p>Viande Hachée, Champignon, Oeuf, Base Crème Fraîche</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-chicago (1).png" alt="Chicago">
+          <div class="item-infos">
+            <h3>Chicago</h3>
+            <hr>
+            <p>Viande Hachée, Bacon fumé, Oeuf, Base Crème Fraîche</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-4frommage.png" alt="4 Fromages">
+          <div class="item-infos">
+            <h3>4 Fromages</h3>
+            <hr>
+            <p>Brie, Parmesan, Chèvre, Bleu, Base Crème Fraîche</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="item-card">
+          <img src="pizza-campagnarde (1).png" alt="Campagnarde">
+          <div class="item-infos">
+            <h3>Campagnarde</h3>
+            <hr>
+            <p>Jambon, Pomme de Terre, Champignon, Boursin, Base Crème Fraîche</p>
+            <p class="prix">7€ Petite, 9€ Moyenne, 13€ Grande</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

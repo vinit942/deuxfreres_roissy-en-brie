@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deux Frères - Burgers</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Anton', sans-serif;
+      background: url('deux_freres.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6); /* filtre sombre pour lisibilité */
+      z-index: -1;
+    }
+
+    .navbar-brand img {
+      height: 50px;
+    }
+
+    .hero {
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 3rem;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .card {
+      transition: transform 0.3s ease;
+      background-color: rgba(255, 255, 255, 0.9); /* semi-transparent blanc */
+      color: black;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      object-fit: contain;
+      height: 200px;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      padding: 10px;
+      background-color: white;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .card-text:last-child {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #dc3545;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="deux_freres.jpg" alt="Deux Frères">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Hero -->
+<div class="hero">
+  Nos Burgers Maison
+</div>
+
+<!-- Section Burgers -->
+<div class="container py-5">
+  <div class="row g-4">
+    <!-- Burger 1 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="egg_chicken burger.png" class="card-img-top" alt="Egg Chicken Burger">
+        <div class="card-body text-center">
+          <h5 class="card-title">Egg Chicken</h5>
+          <p class="card-text">Poulet crispy, œuf, double cheddar, sauce maison.</p>
+          <p class="card-text">9€</p>
+        </div>
+      </div>
+    </div>
+    <!-- Burger 2 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="mc_chicken.png" class="card-img-top" alt="Mc Chicken">
+        <div class="card-body text-center">
+          <h5 class="card-title">Mc Chicken</h5>
+          <p class="card-text">Steak maison, poulet crispy, double cheddar, sauce maison.</p>
+          <p class="card-text">10€</p>
+        </div>
+      </div>
+    </div>
+    <!-- Burger 3 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="smockey bacon.png" class="card-img-top" alt="Smockey Bacon">
+        <div class="card-body text-center">
+          <h5 class="card-title">Smockey Bacon</h5>
+          <p class="card-text">2 steaks maison, bacon fumé, double cheddar, sauce maison.</p>
+          <p class="card-text">11€</p>
+        </div>
+      </div>
+    </div>
+    <!-- Burger 4 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="royal bacon.png" class="card-img-top" alt="Royal Bacon">
+        <div class="card-body text-center">
+          <h5 class="card-title">Royal Bacon</h5>
+          <p class="card-text">2 steaks maison, bacon, œuf, double cheddar, sauce maison.</p>
+          <p class="card-text">11€</p>
+        </div>
+      </div>
+    </div>
+    <!-- Burger 5 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="l_americain.png" class="card-img-top" alt="L'Américain">
+        <div class="card-body text-center">
+          <h5 class="card-title">L'Américain</h5>
+          <p class="card-text">2 steaks maison, galette de pomme de terre, double cheddar, sauce maison.</p>
+          <p class="card-text">11€</p>
+        </div>
+      </div>
+    </div>
+    <!-- Burger 6 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="bigM.png" class="card-img-top" alt="Le Big M">
+        <div class="card-body text-center">
+          <h5 class="card-title">Le Big M</h5>
+          <p class="card-text">2 steaks maison, double cheddar, sauce maison.</p>
+          <p class="card-text">11€</p>
+        </div>
+      </div>
+    </div>
+    <!-- Burger 7 -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="smash-burger.png" class="card-img-top" alt="Smash Burger">
+        <div class="card-body text-center">
+          <h5 class="card-title">Smash Burger</h5>
+          <p class="card-text">2 steaks maison, bacon fumé, jambon fumé, double cheddar, sauce maison.</p>
+          <p class="card-text">7€</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
